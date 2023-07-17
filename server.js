@@ -18,7 +18,7 @@ var app=express();
 // app.set("view engine","ejs");
 app.use(express.static(__dirname+"/build"));
 // require("dotenv").config();
-app.listen(8000,(req,res)=>{
+app.listen(8001,(req,res)=>{
     console.log("started11....!");
 });
 app.use(bodyParser.json());

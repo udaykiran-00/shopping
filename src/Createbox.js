@@ -85,7 +85,7 @@ export default function Createbox(props){
         <div id="title">
           <input id="title1" onChange={change1} placeholder="Add Title" value={note.title} name="inp1"/><br/>
           <input id="url" onChange={change1} placeholder="Add Img URL" value={note.url} name="url"/>
-          <input id="category" onChange={change1} placeholder="Add Cateegory" value={note.category} name="category"/>
+          <input id="category" onChange={change1} placeholder="Add Category" value={note.category} name="category"/>
           <input id="price" onChange={change1} placeholder="Add Price" value={note.price} name="price"/>
 
           <textarea rows="4"  id="content" onChange={change1} placeholder="Add Content" value={note.content}  name="text" >
