@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 // var bcrypt=require("bcrypt");
 // const saltRounds=10;
 const mongoose=require("mongoose");
-
+require('dotenv').config();
 const session=require("express-session");
 const passport=require("passport");
 const passportLocalMongoose=require("passport-local-mongoose");
@@ -42,7 +42,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 // const encrypt=require("mongoose-encryption");
 
-mongoose.connect("mongodb://127.0.0.1:27017/E-Commerce",{useNewUrlParser:true});
+// mongoose.connect("mongodb://127.0.0.1:27017/E-Commerce",{useNewUrlParser:true});
+mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true})
+.then(()=>console.log('connected to db'))
+.catch(err=>console.log(err));
 
 const Schema1=new mongoose.Schema({
     username:String,
