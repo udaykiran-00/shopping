@@ -42,8 +42,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 // const encrypt=require("mongoose-encryption");
 
-// mongoose.connect("mongodb://127.0.0.1:27017/E-Commerce",{useNewUrlParser:true});
-mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true})
+mongoose.connect("mongodb://127.0.0.1:27017/E-Commerce",{useNewUrlParser:true})
+// mongoose.connect(process.env.MONGO_URI,{useNewUrlParser:true})
 .then(()=>console.log('connected to db'))
 .catch(err=>console.log(err));
 
