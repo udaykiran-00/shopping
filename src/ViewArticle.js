@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { Bottom3 } from "./Bottom3"; 
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "./axios";
 export default function Login() {
     const location = useLocation();
     const id = location.state?.id1; // Access response data passed as prop

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Bottom } from "./bottom";
-import axios from "axios";
+import axios from "./axios";
 
 export default function Posts(){
     const [posts,setPosts]=useState({

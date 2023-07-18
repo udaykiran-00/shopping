@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Bottom } from "./bottom";
-import axios from "axios";
+import axios from "./axios";
 import { OrderList } from "./OrderList";
 
 export default function Order(){

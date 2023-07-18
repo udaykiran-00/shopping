@@ -22,7 +22,7 @@
 //      </div>
 //     );
 // }
-import axios from "axios"
+import axios from "./axios";
 import { useEffect, useState } from "react";
 import { Bottom2 } from "./bottom2";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios from "./axios";
 import { Navigate, useNavigate } from "react-router";
 export default function Logout(){
     var navigate=useNavigate();

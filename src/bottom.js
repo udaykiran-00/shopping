@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import axios from "axios";
+import axios from "./axios";
 import { useNavigate } from "react-router";
 export function Bottom(props) {
 

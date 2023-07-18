@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ReactDOM } from "react";
-import axios from "axios";
+import axios from "./axios";
 import {Bottom}  from "./bottom";
 import { CartItems } from "./CartItems";
 export default function Cart(){

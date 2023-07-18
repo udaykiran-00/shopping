@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import ReactDOMServer from "react-dom/server";
 import { del, Bottom } from "./bottom";
 import msg from "./message";
-import axios  from "axios";
+import axios  from "./axios";
 // import {uuid} from "uuidv4"
 
 export default function Createbox(props){

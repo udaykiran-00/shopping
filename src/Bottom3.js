@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {useNavigate} from "react-router-dom";
 import { useState,useEffect } from "react";
-import axios from "axios";
+import axios from "./axios";
 export function Bottom3(props) {
  
   const [cartStatus,setCartStatus]=useState(0);
